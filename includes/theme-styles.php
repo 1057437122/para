@@ -38,8 +38,11 @@ function parabola_enqueue_styles() {
 	// wp_enqueue_style( 'parabola_googlefont');
 	// wp_enqueue_style( 'parabola_googlefonttitle');
 	// wp_enqueue_style( 'parabola_googlefontside');
+
 	// wp_enqueue_style( 'parabola_headingsgooglefont');
 	// wp_enqueue_style( 'parabola_sitetitlegooglefont');
+
+
 	// wp_enqueue_style( 'parabola_menugooglefont');
 	if (($parabola_frontpage=="Enable") && is_front_page()) { wp_enqueue_style( 'parabola-frontpage' ); }
 
