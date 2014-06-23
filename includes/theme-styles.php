@@ -17,12 +17,12 @@ function parabola_register_styles() {
 	if($parabola_mobile=="Enable") { wp_register_style( 'parabola-mobile', get_template_directory_uri() . '/styles/style-mobile.css' );}
 	if($parabola_frontpage=="Enable" ) { wp_register_style( 'parabola-frontpage', get_template_directory_uri() . '/styles/style-frontpage.css' );}
 
-	if($parabola_googlefont) wp_register_style( 'parabola_googlefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+', $parabola_googlefont )));
-	if($parabola_googlefonttitle) wp_register_style( 'parabola_googlefonttitle', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$parabola_googlefonttitle )));
-	if($parabola_googlefontside) wp_register_style( 'parabola_googlefontside',esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$parabola_googlefontside )));
-	if($parabola_headingsgooglefont) wp_register_style( 'parabola_headingsgooglefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$parabola_headingsgooglefont )));
-	if($parabola_sitetitlegooglefont) wp_register_style( 'parabola_sitetitlegooglefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$parabola_sitetitlegooglefont )));
-	if($parabola_menugooglefont) wp_register_style( 'parabola_menugooglefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$parabola_menugooglefont )));
+	// if($parabola_googlefont) wp_register_style( 'parabola_googlefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+', $parabola_googlefont )));
+	// if($parabola_googlefonttitle) wp_register_style( 'parabola_googlefonttitle', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$parabola_googlefonttitle )));
+	// if($parabola_googlefontside) wp_register_style( 'parabola_googlefontside',esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$parabola_googlefontside )));
+	// if($parabola_headingsgooglefont) wp_register_style( 'parabola_headingsgooglefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$parabola_headingsgooglefont )));
+	// if($parabola_sitetitlegooglefont) wp_register_style( 'parabola_sitetitlegooglefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$parabola_sitetitlegooglefont )));
+	// if($parabola_menugooglefont) wp_register_style( 'parabola_menugooglefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$parabola_menugooglefont )));
 
 }
 
@@ -35,12 +35,12 @@ function parabola_enqueue_styles() {
 
 	wp_enqueue_style( 'parabolas');
 	wp_enqueue_style( 'parabolas2');
-	wp_enqueue_style( 'parabola_googlefont');
-	wp_enqueue_style( 'parabola_googlefonttitle');
-	wp_enqueue_style( 'parabola_googlefontside');
+	// wp_enqueue_style( 'parabola_googlefont');
+	// wp_enqueue_style( 'parabola_googlefonttitle');
+	// wp_enqueue_style( 'parabola_googlefontside');
 	wp_enqueue_style( 'parabola_headingsgooglefont');
 	wp_enqueue_style( 'parabola_sitetitlegooglefont');
-	wp_enqueue_style( 'parabola_menugooglefont');
+	// wp_enqueue_style( 'parabola_menugooglefont');
 	if (($parabola_frontpage=="Enable") && is_front_page()) { wp_enqueue_style( 'parabola-frontpage' ); }
 
 }
