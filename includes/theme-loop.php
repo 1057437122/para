@@ -112,7 +112,7 @@ function parabola_trim_excerpt($text) {
          $allowed_tags = '<a>,<img>,<b>,<strong>,<ul>,<li>,<i>,<h1>,<h2>,<h3>,<h4>,<h5>,<h6>,<pre>,<code>,<em>,<u>,<br>,<p>';
          $text = strip_tags($text, $allowed_tags);
 
-         $words = preg_split("/[\n\r\t ]+/", $text, $parabola_excerptwords + 1, PREG_SPLIT_NO_EMPTY);
+         $words = preg_split("/[\n\r\t ]+/", $text, $parabola_excerptwords + 1);
          if ( count($words) > $parabola_excerptwords ) {
              array_pop($words);
              $text = implode(' ', $words);
