@@ -16,12 +16,12 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
- 	cryout_header_hook();
+ 	cryout_header_hook();//add_action ('cryout_header_hook','parabola_fav_icon')
 	wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 
-<?php cryout_body_hook(); ?>
+<?php cryout_body_hook(); //to top ?>
 
 <div id="wrapper" class="hfeed">
 

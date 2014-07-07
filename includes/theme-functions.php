@@ -304,8 +304,8 @@ function parabola_site_info() {
 	$parabolas = parabola_get_theme_options();
 	foreach ($parabolas as $key => $value) { ${"$key"} = $value ; }	?>
 	<div style="text-align:center;padding:5px 0 2px;text-transform:uppercase;font-size:11px;">
-	<?php _e('Powered by','parabola')?> <a target="_blank" href="<?php echo 'http://www.cryoutcreations.eu';?>" title="<?php echo 'Parabola Theme by '.
-			'Cryout Creations';?>"><?php echo 'Pa&#1103;abola' ?></a> &amp; <a target="_blank" href="<?php echo esc_url('http://wordpress.org/' ); ?>"
+	<?php _e('Powered by','parabola')?> <a target="_blank" href="<?php echo '';?>" title="<?php echo 'Parabola Theme by '.
+			'Cryout Creations';?>"><?php echo 'Pa&#1103;abola' ?></a> &amp; <a target="_blank" href="<?php echo esc_url('' ); ?>"
 			title="<?php esc_attr_e('Semantic Personal Publishing Platform', 'parabola'); ?>"> <?php printf(' %s.', 'WordPress' ); ?>
 		</a>
 	</div><!-- #site-info -->
@@ -320,7 +320,8 @@ add_action('cryout_footer_hook','parabola_site_info',12);
  */
 function parabola_copyright() {
 	$parabolas = parabola_get_theme_options();
-	foreach ($parabolas as $key => $value) { ${"$key"} = $value ; }
+	// foreach ($parabolas as $key => $value) { ${"$key"} = $value ; }
+	$parabola_copyright=$parabolas['parabola_copyright'];
 	echo '<div id="site-copyright">'.$parabola_copyright.'</div>';
 } // parabola_copyright()
 

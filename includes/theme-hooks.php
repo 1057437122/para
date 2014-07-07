@@ -12,7 +12,7 @@
 
 // Before wp_head hook
 function cryout_header_hook() {
-    do_action('cryout_header_hook');
+    do_action('cryout_header_hook');//add_action ('cryout_header_hook','parabola_fav_icon')
 }
 // Meta hook
 function cryout_meta_hook() {
