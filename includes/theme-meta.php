@@ -62,7 +62,7 @@ if ($parabolas['parabola_iecompat']): echo PHP_EOL.'<meta http-equiv="X-UA-Compa
 
 function meta_description(){
 global $parabolas;
-echo '<meta name="keywords" content="'.get_bloginfo( 'description' ).'">';
+echo '<meta name="description" content="'.get_bloginfo( 'description' ).'">';
 }
 add_action ('cryout_meta_hook','meta_description');
 add_action ('cryout_meta_hook','parabola_meta_title',0);
