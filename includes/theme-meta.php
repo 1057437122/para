@@ -55,12 +55,16 @@ echo PHP_EOL.'<meta property="template" content="parabola" />'.PHP_EOL;
  */
 function parabola_meta_title() {
 global $parabolas;
-echo "<title>".wp_title( '', false, 'right' )."</title>";
+// echo "<title>".wp_title( '', false, 'right' )."</title>";
+echo "<title>".get_bloginfo( 'name' )."</title>";
 if ($parabolas['parabola_iecompat']): echo PHP_EOL.'<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />'; endif;
 }
 
-
-
+function meta_description(){
+global $parabolas;
+echo '<meta name="keywords" content="'.get_bloginfo( 'description' ).'">';
+}
+add_action ('cryout_meta_hook','meta_description');
 add_action ('cryout_meta_hook','parabola_meta_title',0);
 add_action ('cryout_meta_hook','parabola_meta_template');
 
