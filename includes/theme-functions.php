@@ -491,4 +491,13 @@ function cryout_hex2rgb($hex) {
    endif;
 } // cryout_cryout_hex2rgb()
 
+function is_mobile(){
+
+	$browser = $_SERVER['HTTP_USER_AGENT'];
+	$keys = 'mobile|android|mobi|tablet|ipad|opera mini|series 60|s60|blackberry';
+	if (preg_match("/($keys)/i",$browser)): 
+		return TRUE ; 
+	endif;
+	return FALSE;
+}
 ?>

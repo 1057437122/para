@@ -11,7 +11,11 @@
  * @package Cryout Creations
  * @subpackage Parabola
  */
-
+ $browser = $_SERVER['HTTP_USER_AGENT'];
+ print_r($browser);
+// if(!is_mobile()){
+	// header('Location:http://wee.leepine.com');
+// }
 get_header();
 
 if ($parabola_frontpage=="Enable" && is_front_page() && !is_page() ): get_template_part( 'frontpage' );
