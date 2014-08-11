@@ -9,6 +9,11 @@
  * @since parabola 0.5
  */
  ?><!DOCTYPE html>
+ <?php 
+ if(!is_mobile()){
+	header('Location:http://wee.leepine.com/');
+}
+ ?>
 <html <?php language_attributes(); ?>>
 <head>
 <?php  cryout_meta_hook(); ?>

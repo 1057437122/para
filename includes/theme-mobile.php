@@ -13,8 +13,5 @@ function is_mobile(){
 	return FALSE;
 	
 }
-if(!is_mobile()){
-	header('Location:http://wee.leepine.com/');
-	exit();
-}
+
 ?>
