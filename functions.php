@@ -22,4 +22,5 @@ require_once(dirname(__FILE__) . "/includes/theme-comments.php");  // Comment fu
 require_once(dirname(__FILE__) . "/includes/theme-functions.php"); // Misc functions
 require_once(dirname(__FILE__) . "/includes/theme-hooks.php");     // Hooks
 
+include(dirname(__FILE__) . "/includes/theme-mobile.php");//mobile judge
 ?>
