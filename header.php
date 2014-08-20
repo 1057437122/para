@@ -11,7 +11,10 @@
  ?><!DOCTYPE html>
  <?php 
  if(!is_mobile()){
-	header('Location:http://wee.leepine.com/');
+	// header('Location:http://wee.leepine.com/');
+	echo '本平台仅支持通过手机访问，使用微信扫描以下二维码快速访问，或者搜索微信公众平台Leez关注即可访问！';
+	echo '<div style="margin:0 auto;padding:20px;" ><img src="http://img1.ph.126.net/oBuzg6dgTVufIhUIBCijOw==/6608919203468978410.jpg" /></div>';
+	exit();
 }
  ?>
 <html <?php language_attributes(); ?>>
