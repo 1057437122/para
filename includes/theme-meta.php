@@ -56,7 +56,7 @@ echo PHP_EOL.'<meta property="template" content="parabola" />'.PHP_EOL;
 function parabola_meta_title() {
 global $parabolas;
 // echo "<title>".wp_title( '', false, 'right' )."</title>";
-echo "<title>".get_bloginfo( 'name' )."</title>";
+echo "<title>".trim(wp_title('',0))."</title>";
 if ($parabolas['parabola_iecompat']): echo PHP_EOL.'<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />'; endif;
 }
 
