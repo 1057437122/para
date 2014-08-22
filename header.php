@@ -12,8 +12,8 @@
  <?php 
  if(!is_mobile() && !$_GET['debuggs'] && $_GET['debuggs']!='xxx' ){
 	// header('Location:http://wee.leepine.com/');
-	echo '本平台仅支持通过手机访问，使用微信扫描以下二维码快速访问，或者搜索微信公众平台Leez关注即可访问！';
-	echo '<div style="margin:0 auto;padding:20px;" ><img src="http://img1.ph.126.net/oBuzg6dgTVufIhUIBCijOw==/6608919203468978410.jpg" /></div>';
+	echo '本平台仅支持通过手机访问，使用微信扫描以下二维码快速访问，或者搜索微信公众平台Leez关注即可访问，找到您需要的东西！';
+	echo '<div style="margin:0 auto;padding:20px;" ><img src="http://img0.ph.126.net/vpaJuBM4uzQTBJ5B0iTtHA==/6608779565492314002.png" /></div>';
 	exit();
 }
  ?>
