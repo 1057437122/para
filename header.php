@@ -13,7 +13,7 @@
  if(!is_mobile() && !$_GET['debuggs'] && $_GET['debuggs']!='xxx' ){
 	// header('Location:http://wee.leepine.com/');
 	echo '本平台仅支持通过手机访问，使用微信扫描以下二维码快速访问，或者搜索微信公众平台Leez关注即可访问，找到您需要的东西！';
-	echo '<div style="margin:0 auto;padding:20px;" ><img src="http://ww3.sinaimg.cn/mw690/9f2e29e5tw1ejwqorw8zdj20bs0goq69.jpg" /></div>';
+	echo '<div style="margin:0 auto;padding:20px;" ><img src="http://ww3.sinaimg.cn/mw690/9f2e29e5tw1el74zss2zgj2076076wey.jpg" /></div>';
 	exit();
 }
  ?>
