@@ -36,5 +36,7 @@
 </body>
 </html>
 <!-- JiaThis Button BEGIN -->
+<?php if(!is_mobile()){?>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1406646562457216&move=0&amp;btn=r2.gif" charset="utf-8"></script>
+<?php }?>
 <!-- JiaThis Button END -->
